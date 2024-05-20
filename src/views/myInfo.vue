@@ -36,11 +36,14 @@ const phoneNumber = ref('1234567890');
 <template>
   <div id="myInfo">
 
- 
     <div class="header">
-        2024CSU暑期打卡
 
-      </div>
+<van-button  size= "small" to="/myInfo" icon="arrow-left" color="rgb(157,041,050)"
+loading-text="加载中..." ></van-button>
+
+        <span>2024CSU暑期打卡</span>
+        
+    </div>
 
    <div class="van-cell-group">
     <van-cell-group title="我的信息">
@@ -57,11 +60,6 @@ const phoneNumber = ref('1234567890');
 
 
 <style scoped>
-#myInfo {
-  display: flex;
-  flex-direction: column;
-
-}
 .header {
     background-color: rgb(157,041,050);
     color:white;
@@ -75,5 +73,14 @@ const phoneNumber = ref('1234567890');
 .van-cell-group {
   width: 330px;
   margin:0 auto;
+}
+.van-button {
+  float: left;
+  margin-left: 10px;
+  margin-top: 4px;
+
+}
+.span {
+  margin-left: 5px;
 }
 </style>

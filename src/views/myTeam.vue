@@ -98,6 +98,6 @@ loading-text="加载中..." ></van-button>
 
 }
 .span {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 </style>
